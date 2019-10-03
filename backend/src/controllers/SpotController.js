@@ -26,10 +26,11 @@ module.exports = {
     }
 
     const { company, techs, price } = req.body;
+    const { filename } = req.file;
 
     const spot = await Spot.create({
       user: user_id,
-      thumbnail,
+      thumbnail: filename,
       company,
       techs: techs.split(",").map(tech => tech.trim()),
       price
