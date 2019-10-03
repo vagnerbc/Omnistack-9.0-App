@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
 
 * {
   margin: 0;
@@ -7,17 +7,21 @@
   box-sizing: border-box;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   min-height: 100%;
 }
 
 body {
-  background: #000 url('./assets/background.jpg') no-repeat;
+  background: #000 url("./assets/background.jpg") no-repeat;
   background-size: cover;
   -webkit-font-smoothing: antialised !important;
 }
 
-body, input, button {
+body,
+input,
+button {
   font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 14px;
 }
@@ -55,6 +59,12 @@ body, input, button {
   color: #444;
   font-weight: bold;
   margin-bottom: 8px;
+}
+
+.container form label span {
+  font-weight: normal;
+  color: #999;
+  font-size: 12px;
 }
 
 .content form input {
