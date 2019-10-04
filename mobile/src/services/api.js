@@ -1,7 +1,10 @@
 import axios from "axios";
+import { YellowBox } from "react-native";
+
+YellowBox.ignoreWarnings(["Unrecognized WebSocket"]);
 
 const api = axios.create({
-  baseURL: "http://10.42.13.110:3333"
+  baseURL: "http://192.168.0.2:3333"
 });
 
 export default api;

@@ -46,7 +46,7 @@ const SpotList = ({ tech, navigation }) => {
           <View style={styles.listItem}>
             <Image
               style={styles.thumbnail}
-              source={{ uri: item.thumbail_url }}
+              source={{ uri: item.thumbnail_url }}
             />
 
             <Text style={styles.company}>{item.company}</Text>
